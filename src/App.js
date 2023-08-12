@@ -26,15 +26,15 @@ const App = () => {
       </div>
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-sm lg:flex-grow">
-          <a href="/about" className="block mt-4 lg:inline-block lg:mt-0 text-yellow-100 hover:text-white mr-4">
+          <a href="/portal/about" className="block mt-4 lg:inline-block lg:mt-0 text-yellow-100 hover:text-white mr-4">
             About
           </a>
-          <a href="/guidelines" className="block mt-4 lg:inline-block lg:mt-0 text-yellow-100 hover:text-white mr-4">
+          <a href="/portal/guidelines" className="block mt-4 lg:inline-block lg:mt-0 text-yellow-100 hover:text-white mr-4">
             Guidelines
           </a>
         </div>
         <div>
-          <a href="/su" className="inline-block text-sm px-4 py-2 leading-none border rounded text-yellow-100 border-yellow-100 hover:border-transparent hover:text-yellow-500 hover:bg-white mt-4 lg:mt-0">Submit</a>
+          <a href="/portal/submit" className="inline-block text-sm px-4 py-2 leading-none border rounded text-yellow-100 border-yellow-100 hover:border-transparent hover:text-yellow-500 hover:bg-white mt-4 lg:mt-0">Submit</a>
         </div>
       </div>
 
@@ -43,10 +43,10 @@ const App = () => {
       <div className="App" >
 
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/guidelines" element={<Guidelines/>}/>
-          <Route path="/submit" element={<ContestantForm/>}/>
-          <Route path="/about" element={<About/>} />
+          <Route path="/portal" element={<Home/>}/>
+          <Route path="/portal/guidelines" element={<Guidelines/>}/>
+          <Route path="/portal/submit" element={<ContestantForm/>}/>
+          <Route path="/portal/about" element={<About/>} />
         </Routes>
 
       </div>
