@@ -1,60 +1,16 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import Dropzone from 'react-dropzone';
+import React from 'react';
 
-const ContestantForm = ({ token }) => {
-  const [selectedFile, setSelectedFile] = useState(null);
-
-  const handleFileDrop = (acceptedFiles) => {
-    setSelectedFile(acceptedFiles[0]);
-  };
-
-  const handleUpload = async () => {
-    if (!selectedFile) return;
-
-    const formData = new FormData();
-    formData.append('file', selectedFile);
-
-    try {
-      await axios.post(
-        'https://api.github.com/repos/YOUR_USERNAME/YOUR_REPO/contents/path/to/upload/folder/' + selectedFile.name,
-        {
-          message: 'Upload new image',
-          content: btoa(selectedFile)
-        },
-        {
-          headers: {
-            Authorization: `token ${token}`,
-            Accept: "image/*"
-          }
-        }
-      );
-
-      alert('File uploaded successfully!');
-    } catch (error) {
-      console.error('Error uploading file:', error);
-      alert('Error uploading file.');
-    }
-  };
-
+const ContestantForm = () => {
+ 
   return (
-    <div>
-      <h2 className="text-4xl font-extrabold dark:text-white">Contestant Submission</h2>
-      <h3 className="text-3xl font-bold dark:text-white">lauren will fix this lol</h3>
-      <Dropzone onDrop={handleFileDrop} >
-        {({ getRootProps, getInputProps }) => (
-          <div {...getRootProps()} style={{ border: '1px dashed #ccc', padding: '20px', textAlign: 'center' }}>
-            <input {...getInputProps()} />
-            {selectedFile ? (
-              <p>Selected: {selectedFile.name}</p>
-            ) : (
-              <p>Drag and drop an image file here, or click to select one.</p>
-            )}
-          </div>
-        )}
-      </Dropzone>
-      <button onClick={handleUpload} disabled={!selectedFile}>
-        Upload
+    <div className="lg:container md:container sm:container my-10 mx-auto">
+      <h1 className="text-5xl font-extrabold dark:text-white">Submission Form: Prelude</h1>
+      <h3 className="text-3xl font-bold dark:text-white">*Requires valid Google account</h3>
+      <div className="my-5">
+      <p>Submission ends through end-of-day 9/1. Please reach out to some asshole if you run into submission issues. </p>
+      </div>
+      <button className="my-10 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" >
+        <a href="https://forms.gle/yyRbMomRUYYaUnBA8">Google Form</a>
       </button>
     </div>
   );
