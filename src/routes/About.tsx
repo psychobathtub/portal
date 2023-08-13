@@ -17,13 +17,12 @@ const About = () => {
         <p>
         Aenean eget sollicitudin dui. Proin pellentesque eget ipsum eget fringilla. Nam id urna in quam suscipit 
         consectetur eu eget elit. Fusce auctor scelerisque est, sed volutpat sapien. Curabitur eu mi aliquet, 
-        fermentum nisl et, tincidunt risus. <a href="#">Learn more</a> about our debugging features.
+        fermentum nisl et, tincidunt risus. 
         </p>
 
         <p>
         Cras sed condimentum lorem. Vivamus eu facilisis nisl. Nulla facilisi. Duis et facilisis ante. 
         Proin nec eleifend ligula. Vivamus congue aliquam augue, non efficitur metus suscipit vel. 
-        <a href="#">Contact us</a> for further assistance.
         </p>
 
     </div>  
@@ -32,7 +31,7 @@ const About = () => {
       <div className="-m-3 flex flex-auto m:-m-3">
         <div className="m-3 flex w-1/3 flex-nowrap place-content-center">
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="x-auto" src={q_img} alt="Placeholder image"/>
+            <img className="x-auto" src={q_img} alt="Placeholder"/>
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
                 <p className="text-gray-700 text-base">
@@ -48,7 +47,7 @@ const About = () => {
         </div>
         <div className="m-3 flex w-1/3 flex-nowrap place-content-center">
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="x-auto" src={x_img} alt="Placeholder image"/>
+            <img className="x-auto" src={x_img} alt="Placeholder"/>
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
                 <p className="text-gray-700 text-base">
@@ -64,7 +63,7 @@ const About = () => {
         </div>
         <div className="m-3 flex w-1/3 flex-nowrap place-content-center">
           <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="x-auto" src={banjo_img} alt="Placeholder image"/>
+            <img className="x-auto" src={banjo_img} alt="Placeholder"/>
             <div className="px-6 py-4">
                 <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
                 <p className="text-gray-700 text-base">
