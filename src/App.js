@@ -12,8 +12,8 @@ import logo from './img/logo.png';
 
 const App = () => {
   return (
-  <div className="App" >  
-    <nav className="flex items-center justify-between flex-wrap bg-yellow-400 p-6">
+  <div className="App dark:bg-slate-800" >  
+    <nav className="flex items-center justify-between flex-wrap bg-yellow-500 p-6">
       <div className="flex items-center flex-shrink-0 text-white mr-6">
         {/* <svg className="fill-current h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg"><path d="M13.5 22.1c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05zM0 38.3c1.8-7.2 6.3-10.8 13.5-10.8 10.8 0 12.15 8.1 17.55 9.45 3.6.9 6.75-.45 9.45-4.05-1.8 7.2-6.3 10.8-13.5 10.8-10.8 0-12.15-8.1-17.55-9.45-3.6-.9-6.75.45-9.45 4.05z"/></svg> */}
         <span className="font-semibold text-xl tracking-tight"><a href="/"><img src={logo} className="h-8 mr-3" alt="n⭐️Style logo"/></a></span>
@@ -25,15 +25,15 @@ const App = () => {
       </div>
       <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
         <div className="text-sm lg:flex-wrap">
-          <a href="/about" className="block mt-4 lg:inline-block lg:mt-0 text-yellow-100 hover:text-white mr-4">
+          <a href="/about" className="text-base font-semibold block mt-4 lg:inline-block lg:mt-0 text-yellow-100 hover:text-white mr-4">
             About
           </a>
-          <a href="/guidelines" className="block mt-4 lg:inline-block lg:mt-0 text-yellow-100 hover:text-white mr-4">
+          <a href="/guidelines" className="text-base font-semibold block mt-4 lg:inline-block lg:mt-0 text-yellow-100 hover:text-white mr-4">
             Guidelines
           </a>
         </div>
         <div>
-          <a href="/submit" className="inline-block text-sm px-4 py-2 leading-none border rounded text-yellow-100 border-yellow-100 hover:border-transparent hover:text-yellow-500 hover:bg-white mt-4 lg:mt-0">Submit</a>
+          <a href="/submit" className="text-base font-semibold inline-block text-sm px-4 py-2 leading-none border rounded text-yellow-100 bg-yellow-800 border-yellow-700 hover:border-transparent hover:text-yellow-500 hover:bg-white mt-4 lg:mt-0">Submit</a>
         </div>
       </div>
 

@@ -6,7 +6,14 @@ import banjo_img from '../img/misc/UDi1Upg.png';
 
 const About = () => {
   return (
-    <div>
+    <div className="my-10">
+    <h1 className="text-5xl font-extrabold dark:text-white">Header 1</h1>
+    <h2 className="text-4xl font-bold dark:text-white">Heading 2</h2>
+    <h3 className="text-3xl font-bold dark:text-white">Header 3</h3>
+    <h4 className="text-2xl font-bold dark:text-white">Heading 4</h4>
+    <h5 className="text-xl font-bold dark:text-white">Heading 5</h5>
+    <h6 className="text-lg font-bold dark:text-white">Heading 6</h6>
+
     <div className="2xl:container mx-auto px-5 py-2 xl:px-32 xl:pt-12">
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in massa nec augue facilisis egestas. 
