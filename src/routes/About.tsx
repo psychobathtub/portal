@@ -7,7 +7,14 @@ import banjo_img from '../img/misc/UDi1Upg.png';
 const About = () => {
   return (
     <div>
-    <div className="2xl:container mx-auto px-5 py-2 xl:px-32 xl:pt-12">
+    <h1>Header 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Header 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <div>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in massa nec augue facilisis egestas. 
         Duis eget nulla a leo sollicitudin hendrerit. Ut ut malesuada leo, id bibendum ex. Sed non metus 
@@ -27,58 +34,9 @@ const About = () => {
 
     </div>  
 
-    <div className="2xl:container mx-auto px-5 py-2 xl:px-32 xl:pt-12">
-      <div className="-m-3 flex flex-auto m:-m-3">
-        <div className="m-3 flex w-1/3 flex-nowrap place-content-center">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="x-auto h-1/2 place-content-center" src={q_img} alt="Placeholder"/>
-            <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-            </div>
-        </div>
-        </div>
-        <div className="m-3 flex w-1/3 flex-nowrap place-content-center">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="x-auto h-1/2 place-content-center" src={x_img} alt="Placeholder"/>
-            <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-            </div>
-        </div>
-        </div>
-        <div className="m-3 flex w-1/3 flex-nowrap place-content-center">
-          <div className="max-w-sm rounded overflow-hidden shadow-lg">
-            <img className="x-auto h-1/2 place-content-center" src={banjo_img} alt="Placeholder"/>
-            <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-                <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
-                </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#photography</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#travel</span>
-                <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
-            </div>
-        </div>
-        </div>
-      </div>
-    </div>
+    <img src={q_img} alt="Placeholder"/>
+    <img src={x_img} alt="Placeholder"/>
+    <img src={banjo_img} alt="Placeholder"/>
  
     </div>
   );
